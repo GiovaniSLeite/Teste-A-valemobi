@@ -12,8 +12,7 @@ public class Tabela {
     }
     
     
-    /*Inicialmente contam com as tuplas dispostas pelo exemplo
-    Os dois primeiros objetos tiveram sua ordem invertida tornando possivel observar o funcionamento da ordenacao dos selecionados*/
+    /*Insercao dos dados do enunciado*/
     public void inserir()
     {
         objetos_tabela.add(new Customer_account(2007, "35621485268", "José Felipe Martins", true, 590.9));
@@ -22,10 +21,12 @@ public class Tabela {
         objetos_tabela.add(new Customer_account(2150, "32412587548", "Gev Alison", true, 400));
     }
     
+    /*Insercao de um objeto unico*/
     public void inserir(Customer_account novo_item){
         objetos_tabela.add(novo_item);
     }
     
+    /*Insercao de uma lista de objetos*/
     public void inserir(ArrayList<Customer_account> novos_itens){
         objetos_tabela.addAll(novos_itens);
     }

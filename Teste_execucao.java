@@ -21,21 +21,18 @@ public class Teste_execucao {
 
         dados.clear();
 
+        /*testar a verificacao do vl_total*/
         System.out.println("\n\n***\tTESTE SEM CLIENTES ELEGIVEIS PARA O CALCULO DA MEDIA POR CONTA DO VL_TOTAL\t***\n");
         dados.add(new Customer_account(1950, "47821485297", "Maria Alice Barros", true, 200));
         dados.add(new Customer_account(2007, "35621485268", "José Felipe Martins", true, 290.9));
-        dados.add(new Customer_account(850, "25521485858", "Carlos Eduardo", true, 350));
-        dados.add(new Customer_account(2150, "32412587548", "Gev Alison", true, 400));
         testar(dados);
-        
         
         dados.clear();
 
+        /*Testar a verificacao do id*/
         System.out.println("\n\n***\tTESTE SEM CLIENTES ELEGIVEIS PARA O CALCULO DA MEDIA POR CONTA DO ID\t***\n");
         dados.add(new Customer_account(1, "47821485297", "Maria Alice Barros", true, 1000));
         dados.add(new Customer_account(22, "35621485268", "José Felipe Martins", true, 5000.9));
-        dados.add(new Customer_account(333, "25521485858", "Carlos Eduardo", true, 6000));
-        dados.add(new Customer_account(4444, "32412587548", "Gev Alison", true, 1200));
         testar(dados);
 
     }
